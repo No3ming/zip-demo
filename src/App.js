@@ -34,7 +34,7 @@ class App extends Component {
   getZip = async () => {
     //  解压,仅支持
     await new JSZip.external.Promise(function (resolve, reject) {
-      JSZipUtils.getBinaryContent('http://testupload1.oss-cn-shenzhen.aliyuncs.com/operate/1505990670.zip', (err, data) => {
+      JSZipUtils.getBinaryContent('//testupload1.oss-cn-shenzhen.aliyuncs.com/operate/1505990670.zip', (err, data) => {
         if (err) {
           reject(err);
         } else {
