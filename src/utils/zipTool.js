@@ -25,6 +25,7 @@ export const canvasToblod = (url) => {
         ctx.drawImage(img,0,0);
         canvas.toBlob((blob) => {resolve(blob)});
       };
+      // 注意跨域
       img.crossOrigin = 'anonymous';
       img.src = url;
     })
